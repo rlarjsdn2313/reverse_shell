@@ -48,6 +48,7 @@ int main(int argc, char* argv[]) {
 
     char input[SMALL_BUF] = {0,};
     char buf[BIG_BUF] = {0,};
+    
     while (1) {
         if (read(clnt_sock, buf, sizeof(buf)-1) == -1) {
             error_handling("reading error");
